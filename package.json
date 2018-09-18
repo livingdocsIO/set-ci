@@ -1,0 +1,28 @@
+{
+  "name": "set-ci",
+  "version": "1.0.0",
+  "description": "Sets continuous integration variables on a key in a package.json",
+  "author": "Marc Bachmann <marc.brookman@gmail.com>",
+  "main": "index.js",
+  "bin": {
+    "set-ci": "./index.js"
+  },
+  "scripts": {
+    "test": "node test"
+  },
+  "license": "MIT",
+  "dependencies": {
+    "env-ci": "^2.6.0"
+  },
+  "directories": {
+    "test": "test"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/livingdocsIO/set-ci.git"
+  },
+  "bugs": {
+    "url": "https://github.com/livingdocsIO/set-ci/issues"
+  },
+  "homepage": "https://github.com/livingdocsIO/set-ci#readme"
+}
