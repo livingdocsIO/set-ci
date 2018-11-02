@@ -15,7 +15,10 @@ assert.equal(typeof readPackage().ci.isCi, 'boolean')
 execSync(`node ${ciScript} customKey`, {cwd: __dirname})
 assert.equal(typeof readPackage().customKey, 'object')
 assert.equal(typeof readPackage().customKey.isCi, 'boolean')
-assert.equal(JSON.stringify(ci({cwd: __dirname})), JSON.stringify(readPackage().customKey))
+
+const expectedVars = readPackage().customKey
+delete expectedVars.date
+assert.equal(JSON.stringify(ci({cwd: __dirname})), JSON.stringify(expectedVars))
 
 const droneEnvs = {
   CI: 'drone',
