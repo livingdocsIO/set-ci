@@ -1,4 +1,6 @@
 # set-ci
+[![FOSSA Status](https://app.fossa.io/api/projects/git%2Bgithub.com%2FlivingdocsIO%2Fset-ci.svg?type=shield)](https://app.fossa.io/projects/git%2Bgithub.com%2FlivingdocsIO%2Fset-ci?ref=badge_shield)
+
 
 Sets continuous integration variables on a key in a package.json
 
@@ -36,3 +38,6 @@ $ cat package.json
   }
 }%
 ```
+
+
+[![FOSSA Status](https://app.fossa.io/api/projects/git%2Bgithub.com%2FlivingdocsIO%2Fset-ci.svg?type=large)](https://app.fossa.io/projects/git%2Bgithub.com%2FlivingdocsIO%2Fset-ci?ref=badge_large)
