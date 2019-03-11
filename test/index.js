@@ -62,5 +62,5 @@ assert.equal(pkg.ci.pr, '4234')
 assert.equal(pkg.ci.isPr, true)
 assert.equal(pkg.ci.slug, 'livingdocsIO/set-ci')
 
-console.log('How it looks:')
+process.stdout.write('How it looks:')
 require('../index.js')

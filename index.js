@@ -9,4 +9,4 @@ const ciVars = ci()
 ciVars.date = new Date().toISOString()
 packageJson[keyName] = ciVars
 fs.writeFileSync(packageFile, JSON.stringify(packageJson, null, 2))
-console.log(JSON.stringify(packageJson[keyName], null, 2))
+process.stdout.write(JSON.stringify(packageJson[keyName], null, 2))

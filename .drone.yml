@@ -11,7 +11,7 @@ steps:
   commands: ["npm install"]
 
 - name: eslint
-  image: marcbachmann/eslint:4.19.1
+  image: marcbachmann/eslint:5.10.1
   environment:
     GH_TOKEN:
       from_secret: GH_TOKEN
@@ -44,6 +44,6 @@ trigger:
   event: [push]
 ---
 kind: signature
-hmac: 5fb8e68db89e62a49ac7022051cdfc79cfc70311f50f85b02f5f8f4e0b327e52
+hmac: e7650c62f16ccb08426accf68c68f03cdb02d3d3a0ebfc733152235346ac2788
 
 ...
