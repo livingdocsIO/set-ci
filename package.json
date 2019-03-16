@@ -24,5 +24,8 @@
   "bugs": {
     "url": "https://github.com/livingdocsIO/set-ci/issues"
   },
-  "homepage": "https://github.com/livingdocsIO/set-ci#readme"
+  "homepage": "https://github.com/livingdocsIO/set-ci#readme",
+  "release": {
+    "extends": "@livingdocs/semantic-release-presets/npm-github"
+  }
 }
