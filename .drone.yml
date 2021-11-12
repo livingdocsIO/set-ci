@@ -33,7 +33,7 @@ steps:
   commands: ["git fetch --tags"]
 
 - name: release
-  image: livingdocs/semantic-release:v1.0.0
+  image: livingdocs/semantic-release:v1.2.2
   environment:
     GH_TOKEN:
       from_secret: GH_TOKEN
@@ -44,6 +44,6 @@ trigger:
   event: [push]
 ---
 kind: signature
-hmac: 1fa7915a55a5e9dedd06bf648968e66d92c97415ce956b0d45ac34f28c6ddd89
+hmac: 074ac25eb410253b26b37fb3f167aadf26f632e42fa105ac1a38ce06aa08a86a
 
 ...
